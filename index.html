@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SolTech - Secure IT solutions</title>
+
+  <!-- 
+    - favicon
+  -->
+  
+  <link rel="shortcut icon" href="assets/images/image26.png" type="image/png">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+  rel="stylesheet">
+ <style>
+ 
+ 
+ .lazy_load {
+            opacity: 0;
+            transform: translateY(100px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .lazy_load.loaded {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .card-text {
+            position: relative;
+        }
+        .more-text {
+            display: none;
+        }
+        .card-text {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.more-text {
+    display: none;
+}
+
+.card-link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.spanTag {
+    pointer-events: none; 
+}
+ </style>
+
+
+</head>
+
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" style="background-color: rgba(255, 255, 255, 1);" data-header>
+    <div class="container">
+
+      <a href="#" class="logo" style="display: flex;flex-direction: row; justify-content: center; align-items: center; font-weight: 1000; color: rgb(17, 21, 33); font-size: 25px;" >
+        <img src="./assets/images/image26.png" alt="SoluTech logo" style="height: 3rem; width: 5rem;">
+        <span>SolTech Solutions</span>
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+     
+
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link" data-navbar-link>Home</a>
+            </li>
+
+            <li>
+              <a href="#features" class="navbar-link" data-navbar-link>Projects</a>
+            </li>
+
+            <li>
+              <a href="#service" class="navbar-link" data-navbar-link>Service</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="navbar-link" data-navbar-link>About</a>
+            </li>
+
+            <li>
+              <a href="#newsletter" class="navbar-link" data-navbar-link>Newsletter</a>
+            </li>
+            
+
+          </ul>
+        </div>
+      </nav>
+
+      
+    
+      <button class="btn btn-secondary">
+         <a href="#footer" data-navbar-link style="color: white">Get Started</a>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+      
+      
+      
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero lazy_load " id="home">
+
+        <img src="./assets/images/shape1.png" alt="Illustration art" class="shape shape-1">
+        <img src="./assets/images/shape2.png" alt="Illustration art" class="shape shape-2">
+        <img src="./assets/images/shape3.png" alt="Illustration art" class="shape shape-3">
+
+        <div class="container">
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" alt="Illustration art" loading="lazy" class="w-100">
+          </figure>
+
+          <div class="hero-content">
+
+            <h2 class="h1 hero-title">Secure IT solutions for a more secure environment</h2>
+
+            <p class="section-text">
+              Best Software development Company
+            </p>
+
+            <button class="btn btn-primary" >
+              <a href="#footer" data-navbar-link style="color: white">Get Started</a>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+      <section class="features lazy_load  " id="features">
+        <div class="container">
+            <p class="section-subtitle">Our work</p>
+            <h2 class="h2 section-title">Projects</h2>
+    
+            <ul class="features-list">
+    
+                <li>
+                    <div class="features-card">
+                        <div class="card-icon">
+                            <img src="./assets/images/features-icon-1.png" alt="Illustration icon">
+                        </div>
+                        <h3 class="h3 card-title">ROBOX</h3>
+                        <p class="card-text">
+                            An IoT smart farming system, that monitors and takes farm parameters like humidity, soil moisture, temperature in real time, allowing the farmer to...
+                            <span class="more-text" style="display: none;"> make informed decisions and automate farming activities like irrigation. This system helps to optimize resources and improve crop yield by providing precise data analytics and remote management capabilities.</span>
+                        </p>
+                        <a href="#" class="card-link" onclick="toggleText(event)">
+                          <span class="spanTag">Learn More</span>
+                          <ion-icon name="chevron-forward-outline"></ion-icon>
+                      </a>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="features-card">
+                        <div class="card-icon">
+                            <img src="./assets/images/features-icon-2.png" alt="Illustration icon">
+                        </div>
+                        <h3 class="h3 card-title">CONNECT</h3>
+                        <p class="card-text">
+                            A platform designed to seamlessly connect devices and facilitate real-time data exchange for improved operational efficiency...
+                            <span class="more-text" style="display: none;"> This system allows for better communication between various devices, enhancing automation and control across different applications.</span>
+                        </p>
+                        <a href="#" class="card-link" onclick="toggleText(event)">
+                          <span class="spanTag">Learn More</span>
+                          <ion-icon name="chevron-forward-outline"></ion-icon>
+                      </a>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="features-card">
+                        <div class="card-icon">
+                            <img src="./assets/images/features-icon-3.png" alt="Illustration icon">
+                        </div>
+                        <h3 class="h3 card-title">MEDVAULT</h3>
+                        <p class="card-text">
+                            A secure cloud storage solution for medical records, providing easy access while maintaining patient confidentiality...
+                            <span class="more-text" style="display: none;"> The system complies with healthcare regulations, ensuring that sensitive data is encrypted and accessible only to authorized personnel.</span>
+                        </p>
+                        <a href="#" class="card-link" onclick="toggleText(event)">
+                            <span class="spanTag">Learn More</span>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="features-card">
+                        <div class="card-icon">
+                            <img src="./assets/images/features-icon-4.png" alt="Illustration icon">
+                        </div>
+                        <h3 class="h3 card-title">ISP MANAGEMENT</h3>
+                        <p class="card-text">
+                          software solution designed to help internet service providers efficiently manage and oversee their operations, services, and customer...
+                            <span class="more-text" style="display: none;"> interactions. This system integrates various functionalities to ensure smooth management of network infrastructure, customer accounts, billing, technical support, 
+                              and service provisioning.</span>
+                        </p>
+                        <button class="card-link" onclick="toggleText(event)">
+                          <span class="spanTag">Learn More</span>
+                          <!-- <ion-icon name="chevron-forward-outline"></ion-icon> -->
+                        </button>
+                    </div>
+                </li>
+    
+            </ul>
+    
+        </div>
+    </section>
+    
+   
+  
+    
+      
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service lazy_load  " id="service">
+        <div class="container">
+
+          <figure class="service-banner">
+            <img src="./assets/images/service-1.png" alt="Illustration art" loading="lazy" class="w-100">
+          </figure>
+
+          <div class="service-content">
+
+            <p class="section-subtitle">Services We Offer</p>
+
+            <h2 class="h2 section-title">We offer this services</h2>
+
+            <ul class="service-list">
+
+              <li class="service-item">
+
+                <div class="service-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 service-item-title">Software Development</h3>
+
+              </li>
+
+              <li class="service-item">
+
+                <div class="service-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 service-item-title">Android App Development</h3>
+
+              </li>
+
+              <li class="service-item">
+
+                <div class="service-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 service-item-title">Artificial Intelligence and Machine learning solutions</h3>
+
+              </li>
+
+              <li class="service-item">
+
+                <div class="service-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 service-item-title">Web Development</h3>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <figure class="service-banner">
+            <img src="./assets/images/service-2.png" alt="Illustration art" loading="lazy" class="w-100">
+          </figure>
+
+          <div class="service-content">
+
+            <p class="section-subtitle">Our Services</p>
+
+            <h2 class="h2 section-title">Best IT & technology service in your area</h2>
+
+            <ul class="service-list">
+
+              <li class="service-item">
+
+                <div class="service-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 service-item-title">Frame works e.g React, Django, Express, Mongo DB etc</h3>
+
+              </li>
+
+              <li class="service-item">
+
+                <div class="service-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 service-item-title">Programming languages e.g Java, Python, C, C++, etc</h3>
+
+              </li>
+
+              <li class="service-item">
+
+                <div class="service-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 service-item-title">Web Development Technologies e.g HTML, Javascript etc</h3>
+
+              </li>
+
+              <li class="service-item">
+
+                <div class="service-item-icon">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 service-item-title">Android Development Technologies e.g Kotlin, Dart, C# etc</h3>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="blog lazy_load  " id="blog">
+        <div class="container">
+
+          <p class="section-subtitle">Latest News</p>
+
+          <h2 class="h2 section-title">About Us</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="blog-banner">
+                  <a href="#">
+                    <img src="./assets/images/image90.JPG" alt="How is technology working with new things?"
+                      loading="lazy" class="w-100">
+                  </a>
+                </figure>
+
+                <div class="blog-content">
+
+                  <ul class="blog-meta-list">
+
+                    <li class="blog-meta-item">
+                      <ion-icon name="pricetag-outline"></ion-icon>
+
+                      <a href="#" class="blog-meta-link">Konza Technology</a>
+                    </li>
+
+                    <li class="blog-meta-item">
+                      
+
+                      <time class="blog-meta-time" datetime="2024-09-25">25 September, 2024</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3 blog-title">
+                    <a href="#">How is technology working with new things?</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="blog-banner">
+                  <a href="#">
+                    <img src="./assets/images/image91.JPG" alt="Top 10 important tips on IT services & design"
+                      loading="lazy" class="w-100">
+                  </a>
+                </figure>
+
+                <div class="blog-content">
+
+                  <ul class="blog-meta-list">
+
+                    <li class="blog-meta-item">
+                      <ion-icon name="pricetag-outline"></ion-icon>
+
+                      <a href="#" class="blog-meta-link">WEB DEVELOPMENT</a>
+                    </li>
+
+                    <li class="blog-meta-item">
+                      <ion-icon name="calendar-number-outline"></ion-icon>
+
+                      <time class="blog-meta-time" datetime="2024-09-25">25 September, 2024</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3 blog-title">
+                    <a href="#">Web development and Design</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="blog-banner">
+                  <a href="#">
+                    <img src="./assets/images/image31.png" alt="How our company works in different ways" loading="lazy"
+                      class="w-100">
+                  </a>
+                </figure>
+
+                <div class="blog-content">
+
+                  <ul class="blog-meta-list">
+
+                    <li class="blog-meta-item">
+                      <ion-icon name="pricetag-outline"></ion-icon>
+
+                      <a href="#" class="blog-meta-link">Startup</a>
+                    </li>
+
+                    <li class="blog-meta-item">
+                      <ion-icon name="calendar-number-outline"></ion-icon>
+
+                      <time class="blog-meta-time" datetime="2024-09-25">25 September, 2024</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3 blog-title">
+                    <a href="#">How our company works in different ways</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="newsletter lazy_load  " id="newsletter">
+        <div class="container">
+
+          <figure class="newsletter-banner">
+            <img src="./assets/images/newsletter.png" alt="Illustration art" loading="lazy" class="w-100">
+          </figure>
+
+          <div class="newsletter-content">
+
+            <p class="section-subtitle">Subscribe Our Newsletter</p>
+
+            <h2 class="h2 section-title">The latest resources, sent to your inbox weekly</h2>
+
+            <form id="newsletterForm" class="newsletter-form" method="POST" action="your-backend-endpoint" style="display: flex; flex-direction: column; gap: 10px;">
+              <input 
+                type="email" 
+                name="email" 
+                id="subscriberEmail"
+                required 
+                placeholder="Enter your email address" 
+                class="input-field"
+                style="resize: none; width: 100%;"
+              >
+              
+              <textarea 
+                name="message" 
+                id="feedbackMessage" 
+                required 
+                placeholder="Enter your message or feedback" 
+                class="input-field"
+                rows="4"
+                style="resize: none; width: 100%;"
+              ></textarea>
+            
+              <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+                <span>Subscribe Now!</span>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
+            </form>
+            
+
+            <div id="statusMessage" style="margin-top: 15px; display: none;"></div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <section class="footer lazy_load  " id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo" style="display: flex;flex-direction: row; justify-content: center; align-items: center; font-weight: 1000; color: rgb(17, 21, 33); font-size: 25px;" >
+        <img src="./assets/images/image26.png" alt="SoluTech logo" style="height: 3rem; width: 5rem;">
+        <span>SolTech</span>
+      </a>
+
+          <p class="section-text">
+            At SolTech Solutions, our mission is to deliver innovative and secure IT solutions that empower businesses and individuals to thrive in a digital world. We are committed to enhancing operational efficiency, driving growth, and providing exceptional customer service through our cutting-edge technology and expertise. By prioritizing reliability and integrity, we aim to build long-lasting relationships with our clients, 
+            ensuring their success and satisfaction.
+          </p>
+
+          <div class="location-text">
+            <div class="location-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="address">
+              Machakos Town,  Machakos, Kenya.
+            </address>
+          </div>
+
+        </div>
+
+        <div class="quicklink-box">
+          <p class="h3 quicklink-title">Quick links</p>
+
+          <ul class="quicklink-list">
+
+            <li>
+              <a href="#" class="quicklink">IT Startup</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink">Software</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink">Business</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink">App</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink">Web</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink">Android</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink">Big Data</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink">Distance Learning</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink">Chatbot</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink">AI</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="contact">
+          <p class="h3 contact-title">Contact with us</p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <a href="solutech888@gmail.com" class="contact-link">solutech888@gmail.com</a>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <a href="tel:+254790625309" class="contact-link">+254790625309</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="#">CodewithSolTechSolutions</a>. All Rights Reserved
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.tiktok.com/@_solutech?_t=8qcWYV9ZJF0&_r=1" class="social-link" target="">
+              <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://x.com/SolTech888?t=2JrmCCJcOA074q6ueZF70A&s=09" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/_.solutech/profilecard/?igsh=djJwZjF3bXg1dHNh" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top active" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init({
+  publicKey: "h7cWK7pSzJR8GO15u",
+});
+})();
+</script>
+  <script>
+    const lazyLoadContent=document.querySelectorAll('.lazy_load')
+    document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+    e.preventDefault()
+    let email=document.getElementById('subscriberEmail').value.trim()
+    let message=document.getElementById('feedbackMessage').value.trim()
+    console.log(message)
+      const statusDiv = document.getElementById('statusMessage');
+      if (statusDiv) {
+          statusDiv.style.display = 'block';
+          statusDiv.textContent = 'Sending...';
+      }
+  
+      
+
+      let params={
+           email:email,
+           message:message
+      }
+      emailjs.send('service_ifevqla', 'template_k8ino7h', params).then(
+  (response) => {
+    console.log('SUCCESS!', response.status, response.text);
+    if (statusDiv) {
+              statusDiv.style.backgroundColor = '#dff0d8';
+              statusDiv.style.color = '#3c763d';
+              statusDiv.style.padding = '10px';
+              statusDiv.textContent = 'Your mail is sent!';
+          } else {
+              alert('Your mail is sent!');
+          }
+          
+  },
+  (error) => {
+    console.log('FAILED...', error);
+    if (statusDiv) {
+              statusDiv.style.backgroundColor = '#f2dede';
+              statusDiv.style.color = '#a94442';
+              statusDiv.style.padding = '10px';
+              statusDiv.textContent = 'Failed to send email: ' + error.message;
+          } else {
+              alert('Oops... ' + error.message);
+          }
+  },
+);
+   
+
+         
+  });
+
+  function toggleText(event) {
+    event.preventDefault();
+    
+    // First find the parent features-card div
+    let card;
+    if (event.target.classList.contains('spanTag')) {
+        card = event.target.closest('.features-card');
+    } else if (event.target.classList.contains('card-link')) {
+        card = event.target.closest('.features-card');
+    } else {
+        // Clicked on the ion-icon or some other element
+        card = event.target.closest('.features-card');
+    }
+    
+    if (!card) return; // Guard clause if no card is found
+    
+    // Find the elements within the card
+    const moreText = card.querySelector('.more-text');
+    const linkText = card.querySelector('.spanTag');
+    
+    if (!moreText || !linkText) return; // Guard clause if elements aren't found
+    
+    // Toggle the text display
+    if (moreText.style.display === "none") {
+        moreText.style.display = "inline";
+        linkText.textContent = "Show Less";
+    } else {
+        moreText.style.display = "none";
+        linkText.textContent = "Learn More";
+    }
+}
+
+ const observer=new IntersectionObserver((entries,observer)=>{
+      entries.forEach(entry=>{
+        if (entry.isIntersecting) {
+          console.log('Element is intersecting:', entry.target);
+
+          entry.target.classList.add('loaded');
+        }else{
+          entry.target.classList.remove('loaded')
+        }
+      })
+ },{
+  rootMargin:'0px',
+  threshold:'0.1'//im triggering when 10% of the element is visible
+
+ })
+
+ lazyLoadContent.forEach(element=>{
+  observer.observe(element)
+ })
+  </script>
+</body>
+
+</html>
